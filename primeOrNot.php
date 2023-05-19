@@ -1,21 +1,26 @@
 <?php
 
 function primeOrNot($num){
-    for($i=2;  $i<=$num-1; $i++){
-        // print_r($i);
-        if($num % $i == 0){
-            $setTrue = true;
+    if($num < 0){
+        echo "please enter the value more than 1"."\n";
+    }
+    else{
+        for($i=2;  $i<=$num-1; $i++){
+            // print_r($i);
+            if($num % $i == 0){
+                $setTrue = true;
+            }
+        }
+        if(isset($setTrue)){
+            echo "it is not a prime number"." " .$num."\n";
+        }
+        else{
+            echo "it is a prime number"." ". $num."\n";
+        }
         }
     }
 
-if(isset($setTrue)){
-    echo "it is not a prime number" .$num."\n";
-}
-else{
-    echo "it is a prime number". $num."\n";
-}
-}
-primeOrNot(5)."\n";
+primeOrNot(12)."\n";
 
 // primeOrNot(2)."\n";
 // primeOrNot(3)."\n";
