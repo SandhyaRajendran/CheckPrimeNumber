@@ -20,7 +20,7 @@ function primeOrNot($num){
         }
     }
 
-primeOrNot(12)."\n";
+primeOrNot(1)."\n";
 
 // primeOrNot(2)."\n";
 // primeOrNot(3)."\n";
@@ -31,3 +31,37 @@ primeOrNot(12)."\n";
 // primeOrNot(8)."\n";
 // primeOrNot(9)."\n";
 // primeOrNot(10)."\n";
+
+
+//other way
+
+function primeCheck($number){
+
+    if ($number == 1)
+
+    return 0;
+
+    for ($i = 2; $i <= $number/2; $i++){
+
+        if ($number % $i == 0)
+    
+            return 0;
+
+    }
+
+    return 1;
+
+}
+
+$number = 17;
+
+$flag = primeCheck($number);
+
+if ($flag == 1)
+
+    echo "Prime";
+
+else
+
+    echo "Not Prime";
+
