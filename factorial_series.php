@@ -12,3 +12,31 @@ echo("Your final output is : ");
 echo($secondvalue."\n");
 
 //= 479001600
+
+
+//other way
+
+
+function Factorial($number){
+
+    if($number <= 1){  
+
+        return 1;  
+
+    }  
+
+    else{  
+
+        return $number * Factorial($number - 1);  
+
+    }  
+
+}
+
+$number = 20;
+
+$fact = Factorial($number);
+
+echo "Factorial = $fact";
+
+?>
