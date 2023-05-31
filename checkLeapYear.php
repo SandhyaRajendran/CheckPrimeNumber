@@ -1,4 +1,6 @@
 <?php
+//Write a PHP program to find if the given year is leap year or not.
+
     $my_year = readline("Enter a year : ");
    function year_check($my_year){
       if ($my_year % 400 == 0)
