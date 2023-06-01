@@ -45,3 +45,48 @@ $a=$a/$b;
 echo $a  ;
 echo "Value of a: $a</br>";  
 echo "Value of b: $b</br>";  
+
+
+
+
+//other way
+
+$a = 45;  
+$b = 78;  
+// Swapping Logic  
+$third = $a;  
+$a = $b;  
+$b = $third;  
+echo "After swapping:<br><br>";  
+echo "a =".$a."  b=".$b;  
+?>  
+
+Swap two numbers without using a third variable is done in two ways:
+
+Using arithmetic operation + and ?
+
+Example for (+ and -):
+
+<?php  
+$a=234;  
+$b=345;  
+//using arithmetic operation  
+$a=$a+$b;  
+$b=$a-$b;  
+$a=$a-$b;  
+echo "Value of a: $a</br>";  
+echo "Value of b: $b</br>";  
+?>  
+
+Using arithmetic operation * and /
+Example for (* and /):
+
+<?php  
+$a=234;  
+$b=345;  
+// using arithmetic operation  
+$a=$a*$b;  
+$b=$a/$b;  
+$a=$a/$b;  
+echo "Value of a: $a</br>";  
+echo "Value of b: $b</br>";  
