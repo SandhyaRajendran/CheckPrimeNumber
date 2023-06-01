@@ -4,7 +4,7 @@
 //first method
 $userValue = (int)readline("Enter a number : ");
 // echo "userValue";
-echo $userValue."\n";
+// echo $userValue."\n";
 $startingValue  = 0;
 $secondValue = 1;
 
@@ -14,14 +14,17 @@ echo $secondValue."\n";
 
 $nextValue = $startingValue + $secondValue;
 
-for ($i=1; $i < $userValue; $i++) { 
+for ($i=0; $i < $userValue; $i++) { 
     # code...
     // print_r($userValue);
-    echo $nextValue."\n";
+    // echo $i. "  ".$nextValue."\n";
 
     $startingValue = $secondValue;
     $secondValue = $nextValue;
     $nextValue = $startingValue + $secondValue;
+
+    echo $i. "  ".$nextValue."\n";
+
 }
 // echo $nextValue."\n";
 
@@ -29,18 +32,18 @@ for ($i=1; $i < $userValue; $i++) {
 //second method
 // it prints the value inbetween the given value if i give 10 within 10 it shows the output 0,1,2,3,5,8
 
-$fromUser = (int)readline("Enter a number : ");
-$n1 = 0;
-$n2 = 1;
-$nextTerm = $n1+$n2;
-echo $n1."\n";
-echo $n2."\n";
-while ($nextTerm <= $fromUser) {
-    echo $nextTerm."\n";
-    $n1 = $n2;
-    $n2 = $nextTerm;;
-    $nextTerm = $n1+$n2;
-}
+// $fromUser = (int)readline("Enter a number : ");
+// $n1 = 0;
+// $n2 = 1;
+// $nextTerm = $n1+$n2;
+// echo $n1."\n";
+// echo $n2."\n";
+// while ($nextTerm <= $fromUser) {
+//     echo $nextTerm."\n";
+//     $n1 = $n2;
+//     $n2 = $nextTerm;;
+//     $nextTerm = $n1+$n2;
+// }
 
 //it shows the till the count of userInput ex: 5 its output is 0,1,2,3,5
 //it shows the till the count of userInput ex: 8 its output is 0,1,2,3,5,8,13,21
