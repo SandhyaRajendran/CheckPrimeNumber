@@ -1,31 +1,26 @@
 <?php
 //Write a PHP program to convert string to uppercase without using the library function.
 
-<?php
 //function definition
 //this function accepts a string/text, converts
 //text to uppercase and return the uppercase converted string
 function upperCase($str)
 {
     $chars  = str_split($str);
-    $result = '';
-    
-    //loop from 0th character to the last character
-    for ($i = 0; $i < count($chars); $i++) {
-        //extracting the character and getting its ASCII value
-        $ch = ord($chars[$i]);
-        
-        //if character is a lowercase alphabet then converting 
-        //it into an uppercase alphabet
-        if ($chars[$i] >= 'a' && $chars[$i] <= 'z')
-            $result .= chr($ch - 32);
-        
-        else
-            $result .= $chars[$i];
-        
-    }
-    //finally, returning the string
-    return $result;
+$result = '';
+//loop from 0th character to the last character
+for ($i = 0; $i < count($chars); $i++) {
+//extracting the character and getting its ASCII value
+$ch = ord($chars[$i]);
+//if character is a lowercase alphabet then converting 
+//it into an uppercase alphabet
+if ($chars[$i] >= 'a' && $chars[$i] <= 'z')
+$result .= chr($ch - 32);
+else
+$result .= $chars[$i];
+}
+//finally, returning the string
+return $result;
 }
 
 //function calling
