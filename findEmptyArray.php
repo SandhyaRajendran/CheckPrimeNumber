@@ -13,7 +13,7 @@ else{
 
 //other way
 
-<?php
+
 
 $input = [1,2,4];
 function arrayCheck($getInput){
@@ -25,3 +25,41 @@ function arrayCheck($getInput){
     }
 }
 echo arrayCheck($input);
+
+
+//
+
+// Declare an array and initialize it
+$non_empty_array = array('URL' => 'https://www.geeksforgeeks.org/');
+
+// Declare an empty array
+$empty_array = array();
+
+// Condition to check array is empty or not
+if(!empty($non_empty_array))
+    echo "Given Array is not empty <br>";
+
+if(empty($empty_array))
+    echo "Given Array is empty";
+
+//Declare an empty array
+$empty_array = array();
+
+// Function to count array
+// element and use condition
+if(count($empty_array) == 0)
+    echo "Array is empty";
+else
+    echo "Array is non- empty";
+//<?php
+
+// Declare an empty array
+$empty_array = array();
+
+// Use array index to check
+// array is empty or not
+if( sizeof($empty_array) == 0 )
+    echo "Empty Array";
+else
+    echo "Non-Empty Array";
+?>

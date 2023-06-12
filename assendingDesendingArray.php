@@ -63,3 +63,34 @@ function arrdescSort($values){
         return true;
     }
 }
+
+//other way
+
+
+//declaring & initializing array of integers
+$array = array(10, 80, 100, 11, 22, 21, 19, 10, 88, 89);
+
+//sorting array in ascending order
+sort ($array);
+
+//printing array elements after sorting              
+foreach( $array as $num ){
+    echo $num."\n";
+}
+?>
+
+PHP code for sorting array in descending order
+
+<?php
+//declaring & initializing array of integers
+$array = array(10, 80, 100, 11, 22, 21, 19, 10, 88, 89);
+
+//sorting array in descending order
+rsort ($array);
+
+//printing array elements after sorting              
+foreach( $array as $num ){
+    echo $num."\n";
+}
+?>
+
